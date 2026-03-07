@@ -1,3 +1,8 @@
 print("Welcome to Student Learning Game 🎮")
 player_name=input("Enter your name: ")
 print("Welcome " + player_name+"!"+"lets start your game")
+print("Select your subject")
+print("1:GK")
+print("2:English")
+print("3:Computer Science")
+subject=input("Select your subject: ")
