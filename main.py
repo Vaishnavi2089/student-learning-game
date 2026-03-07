@@ -5,4 +5,12 @@ print("Select your subject")
 print("1:GK")
 print("2:English")
 print("3:Computer Science")
-subject=input("Select your subject: ")
+subject=input(int("Select your subject: "))
+if subject==1:
+    print("GK quiz starting")
+elif subject==2:
+    print("English quiz starting")
+elif subject==3:
+    print("Computer Science quiz starting")
+else
+    print("Invalid choice")
