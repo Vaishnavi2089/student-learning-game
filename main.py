@@ -8,6 +8,14 @@ print("1:GK")
 print("2:English")
 print("3:Computer Science")
 subject=int(input("Select your subject: "))
+if subject == 1:
+    category = 9
+
+elif subject == 2:
+    category = 10
+
+elif subject == 3:
+    category = 18
 # DIFFICULTY SELECTION
 print("Select difficulty level:")
 print("1. Easy")
@@ -27,7 +35,7 @@ else:
     exit()
 
 # API URL
-url = f"https://opentdb.com/api.php?amount=1&difficulty={difficulty_level}&type=multiple"
+url = f"https://opentdb.com/api.php?amount=1&category={category}&difficulty={difficulty_level}&type=multiple"
 
 response = requests.get(url)
 data = response.json()
